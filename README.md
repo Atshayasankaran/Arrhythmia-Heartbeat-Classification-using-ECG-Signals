@@ -31,9 +31,9 @@ Denoised and Segmented signals
 
 3)	Resampling is the process of balancing an unbalanced dataset. The
 dataset has a varied amount of data for each class.
- --------------------------
+
 | Classes      | No of Samples |
--------------------------------
+|--------------|---------------|
 |Normal        | 75011         |
 |SVE           | 2546          |
 |VEB           | 7129          |
