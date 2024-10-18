@@ -27,7 +27,7 @@ is used.
 used to separate a single beat from the continuous beats.
 
 Denoised and Segmented signals
-<img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Denoised signals.JPG">
+<img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Denoised signal.JPG">
 
 3)	Resampling is the process of balancing an unbalanced dataset. The
 dataset has a varied amount of data for each class.
