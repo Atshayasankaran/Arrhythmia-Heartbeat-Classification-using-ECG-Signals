@@ -15,4 +15,4 @@ also contain 53% male and 47% female cardio signals.
 dataset - https://www.kaggle.com/datasets/taejoongyoon/mitbit-arrhythmia-database/data
 
 # Model Architecture
-<img width=800 hight=400 src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Architecture.JPG" alt="bench">
+<img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Architecture.JPG">
