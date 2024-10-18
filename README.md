@@ -73,6 +73,12 @@ model is used to assist the physicians to diagnosis the heart problem
 patients quickly and start the treatment at the earliest possible and
 saves the life of patients.
 
+# publication
+ I have published a paper in Elsevier based on this project. For a more detailed description about the project, please refer to the paper:
+
+- **P. Varalakshmi, Atshaya P. Sankaran** (2023), "An improved hybrid AI model for prediction of arrhythmia using ECG signals" Biomedical Signal Processing and Control (https://doi.org/10.1016/j.bspc.2022.104248)
+
+
 
 
 
