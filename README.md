@@ -17,7 +17,7 @@ dataset - https://www.kaggle.com/datasets/taejoongyoon/mitbit-arrhythmia-databas
 # Model Architecture
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Architecture.JPG">
 
-# Preprocessing:
+# Preprocessing
 1)	Denoising is performed to minimize the noise or unwanted data
 from the ECG signal. For denoising Discrete Wavelet Transform (DWT)
 is used.
@@ -26,7 +26,7 @@ is used.
 2)	The dataset contains the ECG signal with continuous beats. Segmentation is
 used to separate a single beat from the continuous beats.
 
-<h1 align="center">Denoised and Segmented signals</h1>       
+<h5 align="center">Denoised and Segmented signals</h5>       
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Denoised signal.JPG">
 
 3)	Resampling is the process of balancing an unbalanced dataset. The
