@@ -31,7 +31,7 @@ used to separate a single beat from the continuous beats.
 
 3)	Resampling is the process of balancing an unbalanced dataset. The
 dataset has a varied amount of data for each class.
-<p align="center">
+
 | Classes      | No of Samples |
 |--------------|---------------|
 |Normal        | 75011         |
@@ -39,6 +39,39 @@ dataset has a varied amount of data for each class.
 |VEB           | 7129          |
 |Fusion        | 802           |
 |Unknown       | 982           |
-</p>
 
 When compared to the class with the most instances, the number of instances of the class with the fewest instances is less than one percent. To balance the dataset, resampling is performed. After sampling, each class contains 5000 samples.
+
+# Feature Extraction
+Feature extraction is employed to capture important signal characteristics. This work utilizes techniques such as Long Short-Term Memory (LSTM), Gated Recurrent Units (GRU), and Bidirectional LSTM to achieve this.
+
+# Feature Reduction
+For feature reduction, the goal is to minimize the number of features after extraction to speed up training and testing processes. Features are derived from the flatten layer of the deep learning model, and then reduced using two methods: Linear Discriminant Analysis (LDA) and Principal Component Analysis (PCA).
+
+| Algorithms    | Features before reduction | After PCA   | After LDA   |
+|---------------|---------------------------|-------------|-------------|
+|LSTM           | 3600                      | 150         | 4           |
+|BiLSTM         | 7200                      | 150         | 4           |
+
+# Classification
+Classification is performed by feeding the reduced features into various machine learning algorithms. The techniques used for classification include Decision Tree, Random Forest, Naive Bayes, K-Nearest Neighbors (KNN), and Support Vector Machines (SVM) with different kernels: Polynomial, RBF, and Sigmoid.
+
+# Results and Conclusion
+Among all the tested algorithms, the BiLSTM combined with Random Forest achieved the highest accuracy of 98.84%. However, the proposed hybrid model, BiLSTM + Random Forest + PCA, produced a slightly lower accuracy of 98.46% but with reduced prediction time. In comparison, the hybrid model LSTM + Random Forest + PCA delivered a lower accuracy of 98.2%. 
+<h5 algin='center'> 10-fold validation <h5>
+
+| Methods                        | Average accuracy | Standard deviation  |
+|--------------------------------|------------------|---------------------|
+|LSTM, Random forest with PCA    | 98.08%           | 0.0021              | 
+|BiLSTM, Random forest with PCA  | 98.30%           | 0.0021              | 
+
+The models are tested using 10-fold validation method, which again
+ensures the consistency of the proposed models. This proposed hybrid
+model is used to assist the physicians to diagnosis the heart problem
+patients quickly and start the treatment at the earliest possible and
+saves the life of patients.
+
+
+
+
+
