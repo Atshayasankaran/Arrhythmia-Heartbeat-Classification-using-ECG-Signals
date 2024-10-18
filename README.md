@@ -21,9 +21,10 @@ dataset - https://www.kaggle.com/datasets/taejoongyoon/mitbit-arrhythmia-databas
 1)	Denoising is performed to minimize the noise or unwanted data
 from the ECG signal. For denoising Discrete Wavelet Transform (DWT)
 is used.
+<h5 align="center">ECG Signal in the dataset</h5> 
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ECG.JPG">
 
-2)	The dataset contains the ECG signal with continuous beats. Segmentation is
+3)	The dataset contains the ECG signal with continuous beats. Segmentation is
 used to separate a single beat from the continuous beats.
 
 <h5 align="center">Denoised and Segmented signals</h5>       
@@ -60,6 +61,7 @@ Classification is performed by feeding the reduced features into various machine
 Among all the tested algorithms, the BiLSTM combined with Random Forest achieved the highest accuracy of 98.84%. However, the proposed hybrid model, BiLSTM + Random Forest + PCA, produced a slightly lower accuracy of 98.46% but with reduced prediction time. In comparison, the hybrid model LSTM + Random Forest + PCA delivered a lower accuracy of 98.2%. 
 
 <h5 align="center">10-fold cross validation</h5> 
+
 | Methods                        | Average accuracy | Standard deviation  |
 |--------------------------------|------------------|---------------------|
 |LSTM, Random forest with PCA    | 98.08%           | 0.0021              | 
