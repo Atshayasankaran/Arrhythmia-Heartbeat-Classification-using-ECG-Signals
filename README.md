@@ -31,7 +31,7 @@ used to separate a single beat from the continuous beats.
 
 3)	Resampling is the process of balancing an unbalanced dataset. The
 dataset has a varied amount of data for each class.
-
+<p align="center">
 | Classes      | No of Samples |
 |--------------|---------------|
 |Normal        | 75011         |
@@ -39,5 +39,6 @@ dataset has a varied amount of data for each class.
 |VEB           | 7129          |
 |Fusion        | 802           |
 |Unknown       | 982           |
+</p>
 
 When compared to the class with the most instances, the number of instances of the class with the fewest instances is less than one percent. To balance the dataset, resampling is performed. After sampling, each class contains 5000 samples.
