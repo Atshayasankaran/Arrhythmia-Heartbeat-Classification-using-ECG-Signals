@@ -7,7 +7,7 @@ condition has increased. In this work hybrid model is created for feature extrac
 
 # Dataset
 In this study, Massachusetts Institute of Technology-Beth Israel
-Hospital (MIT-BIH) Arrhythmia Dataset [20] is used. Dataset contains
+Hospital (MIT-BIH) Arrhythmia Dataset is used. Dataset contains
 the ECG signals taken from 47 persons recorded for 24 h. This data
 set contains ECG signals of subjects aged between 23 and 89 and
 also contain 53% male and 47% female cardio signals.
@@ -73,10 +73,10 @@ model is used to assist the physicians to diagnosis the heart problem
 patients quickly and start the treatment at the earliest possible and
 saves the life of patients.
 
-# publication
- I have published a paper in Elsevier based on this project. For a more detailed description about the project, please refer to the paper:
+# Publication
+ I have published a paper in Elsevier journal based on this project. For a more detailed description about the project, please refer to the paper:
 
-- **P. Varalakshmi, Atshaya P. Sankaran** (2023), "An improved hybrid AI model for prediction of arrhythmia using ECG signals" Biomedical Signal Processing and Control (https://doi.org/10.1016/j.bspc.2022.104248)
+- **P. Varalakshmi, Atshaya P. Sankaran** (2023), "An improved hybrid AI model for prediction of arrhythmia using ECG signals", Biomedical Signal Processing and Control (https://doi.org/10.1016/j.bspc.2022.104248)
 
 
 
