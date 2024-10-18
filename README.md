@@ -58,8 +58,8 @@ Classification is performed by feeding the reduced features into various machine
 
 # Results and Conclusion
 Among all the tested algorithms, the BiLSTM combined with Random Forest achieved the highest accuracy of 98.84%. However, the proposed hybrid model, BiLSTM + Random Forest + PCA, produced a slightly lower accuracy of 98.46% but with reduced prediction time. In comparison, the hybrid model LSTM + Random Forest + PCA delivered a lower accuracy of 98.2%. 
-<h5 algin='center'> 10-fold validation <h5>
 
+<h5 align="center">10-fold cross validation</h5> 
 | Methods                        | Average accuracy | Standard deviation  |
 |--------------------------------|------------------|---------------------|
 |LSTM, Random forest with PCA    | 98.08%           | 0.0021              | 
