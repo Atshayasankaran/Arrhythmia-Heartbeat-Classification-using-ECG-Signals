@@ -24,7 +24,7 @@ is used.
 <h5 align="center">ECG Signal in the dataset</h5> 
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ECG.JPG">
 
-3)	The dataset contains the ECG signal with continuous beats. Segmentation is
+2)	The dataset contains the ECG signal with continuous beats. Segmentation is
 used to separate a single beat from the continuous beats.
 
 <h5 align="center">Denoised and Segmented signals</h5>       
