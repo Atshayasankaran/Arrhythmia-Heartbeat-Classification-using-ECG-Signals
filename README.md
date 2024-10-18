@@ -26,7 +26,7 @@ is used.
 2)	The dataset contains the ECG signal with continuous beats. Segmentation is
 used to separate a single beat from the continuous beats.
 
-Denoised and Segmented signals
+<h1 align="center">Denoised and Segmented signals</h1>       
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Denoised signal.JPG">
 
 3)	Resampling is the process of balancing an unbalanced dataset. The
@@ -39,4 +39,5 @@ dataset has a varied amount of data for each class.
 |VEB           | 7129          |
 |Fusion        | 802           |
 |Unknown       | 982           |
+
 When compared to the class with the most instances, the number of instances of the class with the fewest instances is less than one percent. To balance the dataset, resampling is performed. After sampling, each class contains 5000 samples.
