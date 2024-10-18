@@ -5,7 +5,7 @@ are produced by the Sino Atrial (SA) node in the heart which acts as a natural p
 signals are irregular, it leads to heart problem. In recent years, the individuals who are diagnosed with this
 condition has increased. In this work hybrid model is created for feature extraction and classification of various arrhythmias which includes Nonectopic beats (normal beat), Ventricular ectopic beats, Supraventricular ectopic beats, Fusion Beats and Unknown Beats by comparing various algorithms for feature extraction, feature reduction and classification. 
 
-# Dataset description
+# Dataset
 In this study, Massachusetts Institute of Technology-Beth Israel
 Hospital (MIT-BIH) Arrhythmia Dataset [20] is used. Dataset contains
 the ECG signals taken from 47 persons recorded for 24 h. This data
