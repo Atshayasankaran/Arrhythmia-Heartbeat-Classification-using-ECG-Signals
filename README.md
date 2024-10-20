@@ -16,7 +16,7 @@ dataset - https://www.kaggle.com/datasets/taejoongyoon/mitbit-arrhythmia-databas
 
 # Model Architecture
 <p align="center">
-<img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Architecture.JPG">
+<img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Architecture.JPG" height="400">
 </p>
 
 # Preprocessing
@@ -46,7 +46,7 @@ dataset has a varied amount of data for each class.
 When compared to the class with the most instances, the number of instances of the class with the fewest instances is less than one percent. To balance the dataset, resampling is performed. After sampling, each class contains 5000 samples.
 
 # Feature Extraction
-Feature extraction is employed to capture important signal characteristics. This work utilizes techniques such as Long Short-Term Memory (LSTM), Gated Recurrent Units (GRU), and Bidirectional LSTM to achieve this.
+Feature extraction is employed to capture important signal characteristics. This work utilizes techniques such as Long Short-Term Memory (LSTM), Gated Recurrent Units (GRU), and Bidirectional LSTM to achieve this. LSTM algorithm extracts 3600 features and BiLSTM extracts 7200 features from each signal.
 
 # Feature Reduction
 For feature reduction, the goal is to minimize the number of features after extraction to speed up training and testing processes. Features are derived from the flatten layer of the deep learning model, and then reduced using two methods: Linear Discriminant Analysis (LDA) and Principal Component Analysis (PCA).
