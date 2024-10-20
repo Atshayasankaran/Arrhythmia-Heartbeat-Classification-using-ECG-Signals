@@ -40,7 +40,7 @@ used to separate a single beat from the continuous beats.
 dataset has a varied amount of data for each class.
 
 <p align="center">
- <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ Class distribution.JPG">
+ <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Class distribution.JPG">
 </p>
 
 When compared to the class with the most instances, the number of instances of the class with the fewest instances is less than one percent. To balance the dataset, resampling is performed. After sampling, each class contains 5000 samples.
@@ -52,7 +52,7 @@ Feature extraction is employed to capture important signal characteristics. This
 For feature reduction, the goal is to minimize the number of features after extraction to speed up training and testing processes. Features are derived from the flatten layer of the deep learning model, and then reduced using two methods: Linear Discriminant Analysis (LDA) and Principal Component Analysis (PCA).
 
 <p align="center">
- <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ Feature reduction.JPG">
+ <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Feature reduction.JPG">
 </p>
 
 
@@ -65,7 +65,7 @@ Among all the tested algorithms, the BiLSTM combined with Random Forest achieved
 <h3 align="center">10-fold cross validation</h3> 
 
 <p align="center">
- <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ Cross validation.JPG">
+ <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Cross validation.JPG">
 </p> 
 
 The models are tested using 10-fold validation method, which again
