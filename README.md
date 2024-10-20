@@ -15,31 +15,33 @@ also contain 53% male and 47% female cardio signals.
 dataset - https://www.kaggle.com/datasets/taejoongyoon/mitbit-arrhythmia-database/data
 
 # Model Architecture
+<p align="center">
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Architecture.JPG">
+</p>
 
 # Preprocessing
 1)	Denoising is performed to minimize the noise or unwanted data
 from the ECG signal. For denoising Discrete Wavelet Transform (DWT)
 is used.
-<h5 align="center">ECG Signal in the dataset</h5> 
+<h5 align="center">ECG Signal in the dataset</h5>
+<p align="center">
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ECG.JPG">
+</p>
 
 2)	The dataset contains the ECG signal with continuous beats. Segmentation is
 used to separate a single beat from the continuous beats.
 
-<h5 align="center">Denoised and Segmented signals</h5>       
+<h5 align="center">Denoised and Segmented signals</h5>
+<p align="center">
 <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/Denoised signal.JPG">
+</p>
 
 3)	Resampling is the process of balancing an unbalanced dataset. The
 dataset has a varied amount of data for each class.
 
-| Classes      | No of Samples |
-|--------------|---------------|
-|Normal        | 75011         |
-|SVE           | 2546          |
-|VEB           | 7129          |
-|Fusion        | 802           |
-|Unknown       | 982           |
+<p align="center">
+ <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ Class distribution.JPG">
+</p>
 
 When compared to the class with the most instances, the number of instances of the class with the fewest instances is less than one percent. To balance the dataset, resampling is performed. After sampling, each class contains 5000 samples.
 
@@ -49,10 +51,10 @@ Feature extraction is employed to capture important signal characteristics. This
 # Feature Reduction
 For feature reduction, the goal is to minimize the number of features after extraction to speed up training and testing processes. Features are derived from the flatten layer of the deep learning model, and then reduced using two methods: Linear Discriminant Analysis (LDA) and Principal Component Analysis (PCA).
 
-| Algorithms    | Features before reduction | After PCA   | After LDA   |
-|---------------|---------------------------|-------------|-------------|
-|LSTM           | 3600                      | 150         | 4           |
-|BiLSTM         | 7200                      | 150         | 4           |
+<p align="center">
+ <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ Feature reduction.JPG">
+</p>
+
 
 # Classification
 Classification is performed by feeding the reduced features into various machine learning algorithms. The techniques used for classification include Decision Tree, Random Forest, Naive Bayes, K-Nearest Neighbors (KNN), and Support Vector Machines (SVM) with different kernels: Polynomial, RBF, and Sigmoid.
@@ -60,12 +62,11 @@ Classification is performed by feeding the reduced features into various machine
 # Results and Conclusion
 Among all the tested algorithms, the BiLSTM combined with Random Forest achieved the highest accuracy of 98.84%. However, the proposed hybrid model, BiLSTM + Random Forest + PCA, produced a slightly lower accuracy of 98.46% but with reduced prediction time. In comparison, the hybrid model LSTM + Random Forest + PCA delivered a lower accuracy of 98.2%. 
 
-<h5 align="center">10-fold cross validation</h5> 
+<h3 align="center">10-fold cross validation</h3> 
 
-| Methods                        | Average accuracy | Standard deviation  |
-|--------------------------------|------------------|---------------------|
-|LSTM, Random forest with PCA    | 98.08%           | 0.0021              | 
-|BiLSTM, Random forest with PCA  | 98.30%           | 0.0021              | 
+<p align="center">
+ <img src="https://github.com/Atshayasankaran/Arrhythmia-Heartbeat-Classification-using-ECG-Signals/blob/main/img/ Cross validation.JPG">
+</p> 
 
 The models are tested using 10-fold validation method, which again
 ensures the consistency of the proposed models. This proposed hybrid
